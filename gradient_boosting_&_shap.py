@@ -68,12 +68,6 @@ print(f"Logistic Regression Accuracy: {lr_accuracy:.2f}")
 
 print(classification_report(y_test, lr_y_pred))
 
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.metrics import classification_report
-import shap
-
 # Copy of dataframe for encoding
 df_encoded = df.copy()
 
