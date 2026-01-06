@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 def analyze_anxiety_data():
     # Extract the newly uploaded archive
-    dataset_folder = "/kaggle/input/anxiety-and-depression-mental-health-factors"
+    dataset_folder = "https://github.com/jarvissimms12/Modeling-Anxiety-and-Depression/blob/main/anxiety_depression_data.csv"
     
     # List files to verify the exact CSV name
     print("Files in dataset:", os.listdir(dataset_folder))
