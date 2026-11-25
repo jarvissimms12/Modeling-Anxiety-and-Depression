@@ -11,6 +11,16 @@ answer is that this dataset doesn't support any of those conclusions.** This rep
 shows how I checked, so a model's output never goes into a report without
 evidence behind it.
 
+
+## Summary
+
+| | |
+|---|---|
+| **Question** | Do therapy, meditation or substance use predict anxiety levels? |
+| **Data** | 1,200 survey respondents, 21 lifestyle and wellbeing variables (included in the repo) |
+| **Method** | Gradient Boosting + SHAP, validated with 5-fold cross-validated ROC AUC, a 100-permutation label-shuffle test, and Welch t-tests / ANOVA for each intervention |
+| **Result** | **No signal.** CV AUC 0.476 (coin flip = 0.5), permutation p = 0.82, every intervention p > 0.4, and no feature correlates with anxiety above \|r\| = 0.074 |
+| **Takeaway** | SHAP charts look convincing even for a model with no predictive power. Validate out of sample before interpreting feature importance. |
 ---
 
 ## Results
